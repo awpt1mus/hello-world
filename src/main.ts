@@ -16,7 +16,7 @@ app.use(express.static(join(process.cwd(),"public")));
 app.all("*",notFoundHandler);
 app.use(errorHandler);
 
-const port = 8080;
+const port = 5000;
 
 app.listen(port,()=> {
     console.log(`hello world listning on port ${port}`);
